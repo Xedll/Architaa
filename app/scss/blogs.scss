@@ -1,0 +1,85 @@
+.blogs {
+   margin-top: 120px;
+   &__container {
+      position: relative;
+   }
+
+   &__main {
+      background: var(--dark, #0E1B1B);
+      max-width: 85%;
+      padding-top: 45px;
+      padding-bottom: 320px;
+   }
+
+   &__title {
+      color: var(--w, #FFF);
+font-family: Playfair Display;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+      &::before {
+         content:'';
+         margin-right: 11px;
+         display: inline-block;
+         vertical-align: middle;
+         width: 305px;
+         height: 3px;
+         background: var(--dark, #fff);
+      }
+   }
+
+   &__grid {
+      position: absolute;
+      top: 190px;
+      left: calc((100vw - 1170px) / 2);
+      width: fit-content;
+      height: fit-content;
+      display: grid;
+      grid-template-columns: repeat(3,370px);
+      gap: 0 30px;
+   }
+
+   &__item {
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__itemBg {
+      position: relative;
+   }
+
+   &__tag {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: #000;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: fit-content;
+      height: fit-content;
+      background: var(--y, #FFC94B);
+      padding: 5px 15px;
+   }
+
+   &__img {
+   }
+
+   &__about {
+      color: var(--w, #FFF);
+text-align: center;
+font-family: Playfair Display;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding: 17px;
+background: var(--dark, #0E1B1B);   
+margin: 0 20px;
+margin-top: -60px;
+z-index:5
+   }
+}

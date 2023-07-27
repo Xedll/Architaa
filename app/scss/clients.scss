@@ -1,0 +1,30 @@
+.clients {
+   margin-top: 290px;
+   padding: 0 110px;
+   &__container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__link {
+   }
+
+   &__title {
+      color: var(--dark, #0E1B1B);
+font-family: Playfair Display;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+&::after {
+   content:'';
+   margin-left:20px;
+   display: inline-block;
+   vertical-align: middle;
+   width: 305px;
+   height: 3px;
+   background: var(--dark, #0E1B1B);
+}
+   }
+}

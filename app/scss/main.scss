@@ -1,0 +1,84 @@
+.mn {
+
+   &__container {
+      position: relative;
+      padding: 15px 60px 0 135px;
+      background: var(--dark, #0E1B1B);   
+      height: 620px;
+      display: flex;
+      flex-direction: column;
+      &>*:not(:last-child) {
+         position: relative;
+         z-index:20;
+      }
+   }
+
+   &__title {
+      max-width: 30%;
+      margin-left: 40px;
+      color: var(--w, #FFF);
+      font-family: 'Playfair Display';
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-top: 150px;
+      margin-bottom: 83px;
+   }
+
+   &__next {
+      margin-bottom: 32px;
+      color: var(--y, #FFC94B);
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+&::before {
+   content:'';
+   margin-right: 11px;
+   display: inline-block;
+   vertical-align: middle;
+   width: 80px;
+   height: 1px;
+   background: #FFC94B;
+}
+   }
+
+   &__prev {
+      color: var(--y, #FFC94B);
+font-family: Open Sans;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 50px;
+&::after {
+   content:'';
+   margin-left: 11px;
+   display: inline-block;
+   vertical-align: middle;
+   width: 80px;
+   height: 1px;
+   background: #FFC94B;
+}
+   }
+
+   &__bg {
+      position: absolute;
+      top: 15px;
+         z-index:0;
+         right: 60px;
+   }
+   &__bgContent {
+      position: relative;
+   }
+   &__bgImg{
+
+   }
+   &__bgNum {
+      position: absolute;
+      bottom:90px;
+      right: 10px;
+   }
+}
